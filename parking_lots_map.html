@@ -45,8 +45,51 @@
         
 </body>
 <script>
+
     
-    
+            // Define location types and their corresponding colors
+        const locationTypes = {
+            school: "blue",
+            office: "green",
+            shopping: "orange",
+            default: "red"
+        };
+
+        // Function to get the color based on location type
+        function getColorByLocationType(type) {
+            return locationTypes[type] || locationTypes.default;
+        }
+
+        // Function to determine the location type based on popup content
+        function determineLocationType(popupContent) {
+            if (popupContent.includes("School") || popupContent.includes("Teacher")) {
+                return "school";
+            } else if (popupContent.includes("Office")) {
+                return "office";
+            } else if (popupContent.includes("Shopping") || popupContent.includes("Mall")) {
+                return "shopping";
+            } else {
+                return "default";
+            }
+        }
+
+        // Function to create a marker with a specific location type
+        function createMarker(lat, lng, popupContent) {
+            const locationType = determineLocationType(popupContent);
+            const color = getColorByLocationType(locationType);
+            const icon = L.AwesomeMarkers.icon({
+                markerColor: color,
+                iconColor: "white",
+                icon: "info-sign",
+                prefix: "glyphicon",
+                extraClasses: "fa-rotate-0"
+            });
+
+            const popup = L.popup({ maxWidth: 300 }).setContent(popupContent);
+
+            const marker = L.marker([lat, lng], {}).setIcon(icon).bindPopup(popup);
+            marker.addTo(map);
+        } 
             var map_5716c9abff8bed1fb98b93ef67e0fc1e = L.map(
                 "map_5716c9abff8bed1fb98b93ef67e0fc1e",
                 {
