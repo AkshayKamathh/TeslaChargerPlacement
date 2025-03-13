@@ -31,19 +31,8 @@ def visualize_on_map(parking_lots_df, output_html):
     folium.LayerControl().add_to(m)
 
     # JavaScript to fetch ownership details
-    ownership_script = """
-    <script>
-    async function fetchOwnership(lat, lon) {
-        const url = `http://127.0.0.1:5000/get-ownership?lat=${lat}&lon=${lon}`;
-        const response = await fetch(url);
-        const data = await response.json();
-        document.getElementById(`ownership-info-${lat}-${lon}`).innerHTML = 
-            `<b>Owner:</b> ${data.owner || 'Unknown'}<br>
-             <b>Contact:</b> ${data.contact || 'N/A'}`;
-    }
-    </script>
-    """
-    m.get_root().html.add_child(folium.Element(ownership_script))
+    m.get_root().html.add_child(folium.Element('<script src="backend/marker_click.js"></script>'))
+
 
     m.save(output_html)
     print(f"Map saved to {output_html}")
