@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>EV Charging Stations Map</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<style>
+    #map { height: 600px; width: 100%; }
+</style>
+</head>
+<body>
+<h2 style="text-align:center;">EV Charging Stations Map</h2>
+<div id="map"></div>
+<script>
+    var map = L.map('map').setView([33.4484, -112.0740], 5);  // Centered in the US
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+    }).addTo(map);
+
+    // Custom orange marker icon
+    var orangeIcon = L.icon({
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x-orange.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34]
+    });
+

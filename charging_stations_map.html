@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV Charging Stations Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <style>
+        #map { height: 600px; width: 100%; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">EV Charging Stations Map</h2>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([33.4484, -112.0740], 5);  // Centered in the US
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        // Custom orange marker icon
+        var orangeIcon = L.icon({
+            iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x-orange.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34]
+        });
+    
+        L.marker([33.50948, -112.05471], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ABC Nissan</b><br>City: Phoenix, AZ<br>Zip: 85014<br>EV Connector: CHADEMO, J1772, J1772COMBO<br>Network: Non-Networked");
+    
+        L.marker([33.6398, -112.10787], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Midway Nissan</b><br>City: Phoenix, AZ<br>Zip: 85023<br>EV Connector: CHADEMO, J1772, J1772COMBO<br>Network: Non-Networked");
+    
+        L.marker([33.6398, -112.10787], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Midway Nissan</b><br>City: Phoenix, AZ<br>Zip: 85023<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.50948, -112.05471], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ABC Nissan</b><br>City: Phoenix, AZ<br>Zip: 85014<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.635457, -112.066788], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>VASEO VASEO STATION1</b><br>City: Phoenix, AZ<br>Zip: 85022<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.300789, -111.97384], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>LIV COMMUNITIES LIV AHWATUKEE 2</b><br>City: Phoenix, AZ<br>Zip: 85048<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.447942, -112.070409], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>COLLIER1 COLLIER 1</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.447778, -112.074798], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>CITY SCAPE WEST GARAGE 2</b><br>City: Phoenix, AZ<br>Zip: 85003<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.44793, -112.073555], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>CITY SCAPE EAST GARAGE 2</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.490872, -112.079322], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>CLARENDONHOTEL CLARENDON 1</b><br>City: Phoenix, AZ<br>Zip: 85013<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.448447, -112.086721], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>1110-ADOA 1110 SOUTH UNIT</b><br>City: Phoenix, AZ<br>Zip: 85007<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.449412, -112.092701], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>1110-ADOA ADOA CNTR UNIT</b><br>City: Phoenix, AZ<br>Zip: 85007<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.449983, -112.097884], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>151 PARKING GAR 1ST FL A</b><br>City: Phoenix, AZ<br>Zip: 85007<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.508316, -112.027213], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ESPLANADE 5</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.508105, -112.027568], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ESPLANADE 3</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.508087, -112.027579], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ESPLANADE 2</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.604665, -111.983689], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Mesquite Library</b><br>City: Phoenix, AZ<br>Zip: 85032<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.467302, -112.073412], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Phoenix Theatre</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.87559856047207, -112.1491985686012], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Outlets at Anthem</b><br>City: Phoenix, AZ<br>Zip: 85086<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.482058, -112.090209], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Phoenix Community College Garage</b><br>City: Phoenix, AZ<br>Zip: 85013<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.447637, -112.066308], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Phoenix Convention Center - East Garage 4th Level</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.450052, -112.064103], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Phoenix Childrens Museum</b><br>City: Phoenix, AZ<br>Zip: 85034<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.46327, -112.073321], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Burton Barr Library</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.449695, -112.067236], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Phoenix Convention Center - Heritage Garage</b><br>City: Phoenix, AZ<br>Zip: 85004<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.577867, -112.11905], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Cholla Library</b><br>City: Phoenix, AZ<br>Zip: 85051<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.554009, -112.100952], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Bookmans - 19th Avenue</b><br>City: Phoenix, AZ<br>Zip: 85021<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.766378, -112.111884], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>NOVA NV NOVA 1</b><br>City: Phoenix, AZ<br>Zip: 85085<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.511837, -112.026803], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Biltmore Fashion Park - Tesla Supercharger</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: TESLA<br>Network: Tesla");
+    
+        L.marker([33.667055, -112.120898], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Deer Valley Town Center - Tesla Supercharger</b><br>City: Phoenix, AZ<br>Zip: 85027<br>EV Connector: TESLA<br>Network: Tesla");
+    
+        L.marker([33.701326, -112.109065], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>NEXMETRO DEER VALLEY ST1</b><br>City: Phoenix, AZ<br>Zip: 85085<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.480625, -111.990211], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ARCADIA 4222 STATION 1</b><br>City: Phoenix, AZ<br>Zip: 85018<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.596778, -112.064907], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Pointe Hilton Tapatio Cliffs Resort - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85020<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.523241, -112.023321], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Arizona Biltmore, A Waldorf Astoria Resort - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.508629, -112.029714], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>The Camby Hotel - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85016<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.424609, -112.021664], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Cutter Aviation Phoenix Sky Harbor - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85034<br>EV Connector: TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.509287, -111.988706], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Buck & Rider - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85018<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.595732, -111.985693], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Embassy Suites Phoenix-Scottsdale - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85032<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.674612, -111.98265], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Cambria Hotel & Suites North Scottsdale Desert Ridge - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85050<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.504236, -111.969247], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Royal Palms Resort and Spa - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85018<br>EV Connector: TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.684154, -112.081904], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Cutter Aviation Deer Valley - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85027<br>EV Connector: TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.675874, -111.967054], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>High Street - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85054<br>EV Connector: TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.448829, -111.988517], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Crowne Plaza Phoenix Airport Hotel - Tesla Destination</b><br>City: Phoenix, AZ<br>Zip: 85034<br>EV Connector: J1772, TESLA<br>Network: Tesla Destination");
+    
+        L.marker([33.907866, -84.283186], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Nalley Nissan of Atlanta</b><br>City: Atlanta, GA<br>Zip: 30360<br>EV Connector: CHADEMO, J1772<br>Network: Non-Networked");
+    
+        L.marker([33.90999, -84.2914], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Jim Ellis Chevrolet</b><br>City: Atlanta, GA<br>Zip: 30341<br>EV Connector: J1772, J1772COMBO<br>Network: Non-Networked");
+    
+        L.marker([33.9064807, -84.4639319], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hilton Garden Inn - Marietta</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.787208, -84.387453], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>One Atlantic Center</b><br>City: Atlanta, GA<br>Zip: 30309<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.787, -84.383549], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>1180 Peachtree Building</b><br>City: Atlanta, GA<br>Zip: 30309<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.767508, -84.38028], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Southface</b><br>City: Atlanta, GA<br>Zip: 30308<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.669868, -84.418478], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Peachy Airport Parking</b><br>City: Atlanta, GA<br>Zip: 30354<br>EV Connector: NEMA515<br>Network: Non-Networked");
+    
+        L.marker([33.751991, -84.387318], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GEORGIA STATE G DECK EV2</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.75886, -84.384194], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Sheraton Hotel</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772, NEMA520<br>Network: Non-Networked");
+    
+        L.marker([33.874961, -84.301305], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>DeKalb Peachtree Airport</b><br>City: Atlanta, GA<br>Zip: 30341<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.755638, -84.398674], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GWCC GWCC MB NGW 8</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.848618, -84.304817], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>HIGHWOODS 2800 NGW1</b><br>City: Atlanta, GA<br>Zip: 30345<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.846544, -84.3063], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>HIGHWOODS 2400 NGW</b><br>City: Atlanta, GA<br>Zip: 30345<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.85114, -84.366722], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>THREE ALLIANCE 3 ALLIANCE EV1</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.85194, -84.364959], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>MONARCH TOWER G MONARCH TOWER 2</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.851384, -84.36464], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>MONARCH TOWER G MONARCH PLAZA</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.640281, -84.398028], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>FASTPARK ATLANTA 1</b><br>City: Atlanta, GA<br>Zip: 30354<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.913436, -84.456553], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GE Campus</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.899408, -84.463308], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ASSURANT - ATL STATION 2</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.775604, -84.386929], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>754 MIDTOWN GW</b><br>City: Atlanta, GA<br>Zip: 30308<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.866937, -84.47224], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>OVERLOOK II SURFACE PARK 1</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.891577, -84.323784], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>BROOKLEIGH FLAT PARKING GARAGE</b><br>City: Atlanta, GA<br>Zip: 30319<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.763981, -84.380076], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GEORGIA POWER GPC CORP HQ2 L2</b><br>City: Atlanta, GA<br>Zip: 30308<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.757551, -84.381217], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GSU HOUSING EVS UNIV COMMONS 2</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.759038, -84.380579], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GSU HOUSING EVS PIEDMONT NORTH</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.757569, -84.381199], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GSU HOUSING EVS UNIV COMMONS 1</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.653832, -84.423689], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>DELTA AIR LINES GO CHARGER 13</b><br>City: Atlanta, GA<br>Zip: 30354<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.821482, -84.365231], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GEORGIA POWER MOROSGO L2</b><br>City: Atlanta, GA<br>Zip: 30324<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.74186, -84.3595], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GEORGIA POWER GLENWOOD DC</b><br>City: Atlanta, GA<br>Zip: 30316<br>EV Connector: CHADEMO, J1772COMBO<br>Network: ChargePoint Network");
+    
+        L.marker([33.638488, -84.444031], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - Domestic Terminal South Hourly</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.643088, -84.443467], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - Domestic Terminal North Hourly</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.64137, -84.419237], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - International Terminal Hourly</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.642508, -84.404983], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - International Terminal Park and Ride</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.64182, -84.44262], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - South Department of Aviation Employee Lot</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.624612, -84.427512], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - Technical Support Campus</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.625719, -84.431299], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Hartsfield-Jackson Atlanta International Airport - Airport Maintenance</b><br>City: Atlanta, GA<br>Zip: 30320<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.82329, -84.388172], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>PEACHTREE EV 2500 PTREE EV</b><br>City: Atlanta, GA<br>Zip: 30305<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.851471, -84.366375], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>THREE ALLIANCE 3 ALLIANCE EV2</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.852015, -84.366524], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>THREE ALLIANCE 3 ALLIANCE EV4</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.891366, -84.466019], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GO BRAVES EAST EV LEVEL 1</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.892135, -84.466187], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>GEORGIA POWER SUNTRUST L2 8</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.822875, -84.44123], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>WESTOVER WESTOVER EV1</b><br>City: Atlanta, GA<br>Zip: 30318<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.822996, -84.437821], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>WESTOVER WESTOVER EV2</b><br>City: Atlanta, GA<br>Zip: 30318<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.773983, -84.383568], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>715PTREE STATION2</b><br>City: Atlanta, GA<br>Zip: 30308<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.813539, -84.393912], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>VENUE BROOKWOOD VENUE EV1</b><br>City: Atlanta, GA<br>Zip: 30309<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.772522, -84.365925], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>PONCE CITY MKT GARAGE LEVEL 4A</b><br>City: Atlanta, GA<br>Zip: 30308<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.847675, -84.357445], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>SALESFORCE TOWE STATION 2</b><br>City: Atlanta, GA<br>Zip: 30326<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.876905, -84.45924], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>RIVERWOOD 200 STATION 5</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.780224, -84.418301], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>PURITAN MILL PURITAN MILL EV</b><br>City: Atlanta, GA<br>Zip: 30318<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.829968, -84.338503], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>N DRUID HILLS STATION 1</b><br>City: Atlanta, GA<br>Zip: 30329<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.778604, -84.389433], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>NCR HQ  MIDTOW NCR EV 13</b><br>City: Atlanta, GA<br>Zip: 30309<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.829001, -84.344342], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Druid Pointe Parking Lot</b><br>City: Atlanta, GA<br>Zip: 30324<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.9134, -84.4182], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>ING - Atlanta</b><br>City: Atlanta, GA<br>Zip: 30327<br>EV Connector: J1772<br>Network: Blink Network");
+    
+        L.marker([33.877674, -84.459523], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>RIVERWOOD 200 STATION 3</b><br>City: Atlanta, GA<br>Zip: 30339<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([33.753606, -84.394258], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Environmental Protection Agency</b><br>City: Atlanta, GA<br>Zip: 30303<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([33.65972, -84.413647], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>DELTA AIR LINES RESERVATIONS #1</b><br>City: Atlanta, GA<br>Zip: 30354<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([27.995139, -82.506186], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Courtesy Nissan - Tampa</b><br>City: Tampa, FL<br>Zip: 33614<br>EV Connector: CHADEMO, J1772<br>Network: Non-Networked");
+    
+        L.marker([28.04892, -82.45832], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Ferman Nissan - North Tampa</b><br>City: Tampa, FL<br>Zip: 33612<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([27.951258, -82.451781], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>CITY OF TAMPA TWIGGS GARAGE 1</b><br>City: Tampa, FL<br>Zip: 33602<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([27.988197, -82.392164], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Tampa Area Electrical JATC</b><br>City: Tampa, FL<br>Zip: 33610<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([27.947161, -82.340532], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>AutoNation Nissan - Brandon</b><br>City: Tampa, FL<br>Zip: 33619<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([27.995139, -82.506186], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Courtesy Nissan - Tampa</b><br>City: Tampa, FL<br>Zip: 33614<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([28.04892, -82.45832], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Ferman Nissan - North Tampa</b><br>City: Tampa, FL<br>Zip: 33612<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([28.086753, -82.492624], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>HILLS COUNTY KEEL LIBRARY</b><br>City: Tampa, FL<br>Zip: 33618<br>EV Connector: J1772<br>Network: ChargePoint Network");
+    
+        L.marker([27.947161, -82.340532], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>AutoNation Nissan - Brandon</b><br>City: Tampa, FL<br>Zip: 33619<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+        L.marker([27.941456, -82.48465], {icon: orangeIcon}).addTo(map)
+        .bindPopup("<b>Publix #1182</b><br>City: Tampa, FL<br>Zip: 33609<br>EV Connector: J1772<br>Network: Non-Networked");
+    
+    </script>
+</body>
+</html>

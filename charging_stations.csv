@@ -1,0 +1,109 @@
+Station Name,City,State,Zip,Latitude,Longitude,EV Connector Types,EV DC Fast Count,EV Level 2 Count,EV Network
+ABC Nissan,Phoenix,AZ,85014,33.50948,-112.05471,"CHADEMO, J1772, J1772COMBO",None,1,Non-Networked
+Midway Nissan,Phoenix,AZ,85023,33.6398,-112.10787,"CHADEMO, J1772, J1772COMBO",None,2,Non-Networked
+Midway Nissan,Phoenix,AZ,85023,33.6398,-112.10787,J1772,None,2,Non-Networked
+ABC Nissan,Phoenix,AZ,85014,33.50948,-112.05471,J1772,None,1,Non-Networked
+VASEO VASEO STATION1,Phoenix,AZ,85022,33.635457,-112.066788,J1772,None,1,ChargePoint Network
+LIV COMMUNITIES LIV AHWATUKEE 2,Phoenix,AZ,85048,33.300789,-111.97384,J1772,None,2,ChargePoint Network
+COLLIER1 COLLIER 1,Phoenix,AZ,85004,33.447942,-112.070409,J1772,None,2,ChargePoint Network
+CITY SCAPE WEST GARAGE 2,Phoenix,AZ,85003,33.447778,-112.074798,J1772,None,2,ChargePoint Network
+CITY SCAPE EAST GARAGE 2,Phoenix,AZ,85004,33.44793,-112.073555,J1772,None,2,ChargePoint Network
+CLARENDONHOTEL CLARENDON 1,Phoenix,AZ,85013,33.490872,-112.079322,J1772,None,2,ChargePoint Network
+1110-ADOA 1110 SOUTH UNIT,Phoenix,AZ,85007,33.448447,-112.086721,J1772,None,2,ChargePoint Network
+1110-ADOA ADOA CNTR UNIT,Phoenix,AZ,85007,33.449412,-112.092701,J1772,None,2,ChargePoint Network
+151 PARKING GAR 1ST FL A,Phoenix,AZ,85007,33.449983,-112.097884,J1772,None,2,ChargePoint Network
+ESPLANADE 5,Phoenix,AZ,85016,33.508316,-112.027213,J1772,None,2,ChargePoint Network
+ESPLANADE 3,Phoenix,AZ,85016,33.508105,-112.027568,J1772,None,2,ChargePoint Network
+ESPLANADE 2,Phoenix,AZ,85016,33.508087,-112.027579,J1772,None,2,ChargePoint Network
+Mesquite Library,Phoenix,AZ,85032,33.604665,-111.983689,J1772,None,2,Blink Network
+Phoenix Theatre,Phoenix,AZ,85004,33.467302,-112.073412,J1772,None,1,Blink Network
+Outlets at Anthem,Phoenix,AZ,85086,33.87559856047207,-112.1491985686012,J1772,None,2,Blink Network
+Phoenix Community College Garage,Phoenix,AZ,85013,33.482058,-112.090209,J1772,None,2,Blink Network
+Phoenix Convention Center - East Garage 4th Level,Phoenix,AZ,85004,33.447637,-112.066308,J1772,None,6,Blink Network
+Phoenix Childrens Museum,Phoenix,AZ,85034,33.450052,-112.064103,J1772,None,2,Blink Network
+Burton Barr Library,Phoenix,AZ,85004,33.46327,-112.073321,J1772,None,4,Blink Network
+Phoenix Convention Center - Heritage Garage,Phoenix,AZ,85004,33.449695,-112.067236,J1772,None,2,Blink Network
+Cholla Library,Phoenix,AZ,85051,33.577867,-112.11905,J1772,None,1,Blink Network
+Bookmans - 19th Avenue,Phoenix,AZ,85021,33.554009,-112.100952,J1772,None,2,Blink Network
+NOVA NV NOVA 1,Phoenix,AZ,85085,33.766378,-112.111884,J1772,None,2,ChargePoint Network
+Biltmore Fashion Park - Tesla Supercharger,Phoenix,AZ,85016,33.511837,-112.026803,TESLA,None,,Tesla
+Deer Valley Town Center - Tesla Supercharger,Phoenix,AZ,85027,33.667055,-112.120898,TESLA,None,,Tesla
+NEXMETRO DEER VALLEY ST1,Phoenix,AZ,85085,33.701326,-112.109065,J1772,None,1,ChargePoint Network
+ARCADIA 4222 STATION 1,Phoenix,AZ,85018,33.480625,-111.990211,J1772,None,2,ChargePoint Network
+Pointe Hilton Tapatio Cliffs Resort - Tesla Destination,Phoenix,AZ,85020,33.596778,-112.064907,"J1772, TESLA",None,4,Tesla Destination
+"Arizona Biltmore, A Waldorf Astoria Resort - Tesla Destination",Phoenix,AZ,85016,33.523241,-112.023321,TESLA,None,6,Tesla Destination
+The Camby Hotel - Tesla Destination,Phoenix,AZ,85016,33.508629,-112.029714,"J1772, TESLA",None,5,Tesla Destination
+Cutter Aviation Phoenix Sky Harbor - Tesla Destination,Phoenix,AZ,85034,33.424609,-112.021664,TESLA,None,2,Tesla Destination
+Buck & Rider - Tesla Destination,Phoenix,AZ,85018,33.509287,-111.988706,"J1772, TESLA",None,3,Tesla Destination
+Embassy Suites Phoenix-Scottsdale - Tesla Destination,Phoenix,AZ,85032,33.595732,-111.985693,"J1772, TESLA",None,4,Tesla Destination
+Cambria Hotel & Suites North Scottsdale Desert Ridge - Tesla Destination,Phoenix,AZ,85050,33.674612,-111.98265,"J1772, TESLA",None,4,Tesla Destination
+Royal Palms Resort and Spa - Tesla Destination,Phoenix,AZ,85018,33.504236,-111.969247,TESLA,None,2,Tesla Destination
+Cutter Aviation Deer Valley - Tesla Destination,Phoenix,AZ,85027,33.684154,-112.081904,TESLA,None,1,Tesla Destination
+High Street - Tesla Destination,Phoenix,AZ,85054,33.675874,-111.967054,TESLA,None,2,Tesla Destination
+Crowne Plaza Phoenix Airport Hotel - Tesla Destination,Phoenix,AZ,85034,33.448829,-111.988517,"J1772, TESLA",None,2,Tesla Destination
+Nalley Nissan of Atlanta,Atlanta,GA,30360,33.907866,-84.283186,"CHADEMO, J1772",None,1,Non-Networked
+Jim Ellis Chevrolet,Atlanta,GA,30341,33.90999,-84.2914,"J1772, J1772COMBO",None,6,Non-Networked
+Hilton Garden Inn - Marietta,Atlanta,GA,30339,33.9064807,-84.4639319,J1772,None,4,Non-Networked
+One Atlantic Center,Atlanta,GA,30309,33.787208,-84.387453,J1772,None,19,Non-Networked
+1180 Peachtree Building,Atlanta,GA,30309,33.787,-84.383549,J1772,None,4,Non-Networked
+Southface,Atlanta,GA,30308,33.767508,-84.38028,J1772,None,1,Non-Networked
+Peachy Airport Parking,Atlanta,GA,30354,33.669868,-84.418478,NEMA515,None,,Non-Networked
+GEORGIA STATE G DECK EV2,Atlanta,GA,30303,33.751991,-84.387318,J1772,None,2,ChargePoint Network
+Sheraton Hotel,Atlanta,GA,30303,33.75886,-84.384194,"J1772, NEMA520",None,1,Non-Networked
+DeKalb Peachtree Airport,Atlanta,GA,30341,33.874961,-84.301305,J1772,None,2,Non-Networked
+GWCC GWCC MB NGW 8,Atlanta,GA,30303,33.755638,-84.398674,J1772,None,2,ChargePoint Network
+HIGHWOODS 2800 NGW1,Atlanta,GA,30345,33.848618,-84.304817,J1772,None,2,ChargePoint Network
+HIGHWOODS 2400 NGW,Atlanta,GA,30345,33.846544,-84.3063,J1772,None,2,ChargePoint Network
+THREE ALLIANCE 3 ALLIANCE EV1,Atlanta,GA,30326,33.85114,-84.366722,J1772,None,2,ChargePoint Network
+MONARCH TOWER G MONARCH TOWER 2,Atlanta,GA,30326,33.85194,-84.364959,J1772,None,2,ChargePoint Network
+MONARCH TOWER G MONARCH PLAZA,Atlanta,GA,30326,33.851384,-84.36464,J1772,None,2,ChargePoint Network
+FASTPARK ATLANTA 1,Atlanta,GA,30354,33.640281,-84.398028,J1772,None,2,ChargePoint Network
+GE Campus,Atlanta,GA,30339,33.913436,-84.456553,J1772,None,2,Non-Networked
+ASSURANT - ATL STATION 2,Atlanta,GA,30339,33.899408,-84.463308,J1772,None,2,ChargePoint Network
+754 MIDTOWN GW,Atlanta,GA,30308,33.775604,-84.386929,J1772,None,2,ChargePoint Network
+OVERLOOK II SURFACE PARK 1,Atlanta,GA,30339,33.866937,-84.47224,J1772,None,2,ChargePoint Network
+BROOKLEIGH FLAT PARKING GARAGE,Atlanta,GA,30319,33.891577,-84.323784,J1772,None,2,ChargePoint Network
+GEORGIA POWER GPC CORP HQ2 L2,Atlanta,GA,30308,33.763981,-84.380076,J1772,None,2,ChargePoint Network
+GSU HOUSING EVS UNIV COMMONS 2,Atlanta,GA,30303,33.757551,-84.381217,J1772,None,1,ChargePoint Network
+GSU HOUSING EVS PIEDMONT NORTH,Atlanta,GA,30303,33.759038,-84.380579,J1772,None,2,ChargePoint Network
+GSU HOUSING EVS UNIV COMMONS 1,Atlanta,GA,30303,33.757569,-84.381199,J1772,None,2,ChargePoint Network
+DELTA AIR LINES GO CHARGER 13,Atlanta,GA,30354,33.653832,-84.423689,J1772,None,2,ChargePoint Network
+GEORGIA POWER MOROSGO L2,Atlanta,GA,30324,33.821482,-84.365231,J1772,None,2,ChargePoint Network
+GEORGIA POWER GLENWOOD DC,Atlanta,GA,30316,33.74186,-84.3595,"CHADEMO, J1772COMBO",None,,ChargePoint Network
+Hartsfield-Jackson Atlanta International Airport - Domestic Terminal South Hourly,Atlanta,GA,30320,33.638488,-84.444031,J1772,None,,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - Domestic Terminal North Hourly,Atlanta,GA,30320,33.643088,-84.443467,J1772,None,10,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - International Terminal Hourly,Atlanta,GA,30320,33.64137,-84.419237,J1772,None,6,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - International Terminal Park and Ride,Atlanta,GA,30320,33.642508,-84.404983,J1772,None,,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - South Department of Aviation Employee Lot,Atlanta,GA,30320,33.64182,-84.44262,J1772,None,2,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - Technical Support Campus,Atlanta,GA,30320,33.624612,-84.427512,J1772,None,2,Non-Networked
+Hartsfield-Jackson Atlanta International Airport - Airport Maintenance,Atlanta,GA,30320,33.625719,-84.431299,J1772,None,2,Non-Networked
+PEACHTREE EV 2500 PTREE EV,Atlanta,GA,30305,33.82329,-84.388172,J1772,None,2,ChargePoint Network
+THREE ALLIANCE 3 ALLIANCE EV2,Atlanta,GA,30326,33.851471,-84.366375,J1772,None,2,ChargePoint Network
+THREE ALLIANCE 3 ALLIANCE EV4,Atlanta,GA,30326,33.852015,-84.366524,J1772,None,2,ChargePoint Network
+GO BRAVES EAST EV LEVEL 1,Atlanta,GA,30339,33.891366,-84.466019,J1772,None,2,ChargePoint Network
+GEORGIA POWER SUNTRUST L2 8,Atlanta,GA,30339,33.892135,-84.466187,J1772,None,2,ChargePoint Network
+WESTOVER WESTOVER EV1,Atlanta,GA,30318,33.822875,-84.44123,J1772,None,2,ChargePoint Network
+WESTOVER WESTOVER EV2,Atlanta,GA,30318,33.822996,-84.437821,J1772,None,2,ChargePoint Network
+715PTREE STATION2,Atlanta,GA,30308,33.773983,-84.383568,J1772,None,2,ChargePoint Network
+VENUE BROOKWOOD VENUE EV1,Atlanta,GA,30309,33.813539,-84.393912,J1772,None,2,ChargePoint Network
+PONCE CITY MKT GARAGE LEVEL 4A,Atlanta,GA,30308,33.772522,-84.365925,J1772,None,2,ChargePoint Network
+SALESFORCE TOWE STATION 2,Atlanta,GA,30326,33.847675,-84.357445,J1772,None,2,ChargePoint Network
+RIVERWOOD 200 STATION 5,Atlanta,GA,30339,33.876905,-84.45924,J1772,None,2,ChargePoint Network
+PURITAN MILL PURITAN MILL EV,Atlanta,GA,30318,33.780224,-84.418301,J1772,None,2,ChargePoint Network
+N DRUID HILLS STATION 1,Atlanta,GA,30329,33.829968,-84.338503,J1772,None,2,ChargePoint Network
+NCR HQ  MIDTOW NCR EV 13,Atlanta,GA,30309,33.778604,-84.389433,J1772,None,2,ChargePoint Network
+Druid Pointe Parking Lot,Atlanta,GA,30324,33.829001,-84.344342,J1772,None,1,Blink Network
+ING - Atlanta,Atlanta,GA,30327,33.9134,-84.4182,J1772,None,2,Blink Network
+RIVERWOOD 200 STATION 3,Atlanta,GA,30339,33.877674,-84.459523,J1772,None,2,ChargePoint Network
+Environmental Protection Agency,Atlanta,GA,30303,33.753606,-84.394258,J1772,None,1,Non-Networked
+DELTA AIR LINES RESERVATIONS #1,Atlanta,GA,30354,33.65972,-84.413647,J1772,None,2,ChargePoint Network
+Courtesy Nissan - Tampa,Tampa,FL,33614,27.995139,-82.506186,"CHADEMO, J1772",None,1,Non-Networked
+Ferman Nissan - North Tampa,Tampa,FL,33612,28.04892,-82.45832,J1772,None,1,Non-Networked
+CITY OF TAMPA TWIGGS GARAGE 1,Tampa,FL,33602,27.951258,-82.451781,J1772,None,2,ChargePoint Network
+Tampa Area Electrical JATC,Tampa,FL,33610,27.988197,-82.392164,J1772,None,1,Non-Networked
+AutoNation Nissan - Brandon,Tampa,FL,33619,27.947161,-82.340532,J1772,None,1,Non-Networked
+Courtesy Nissan - Tampa,Tampa,FL,33614,27.995139,-82.506186,J1772,None,1,Non-Networked
+Ferman Nissan - North Tampa,Tampa,FL,33612,28.04892,-82.45832,J1772,None,1,Non-Networked
+HILLS COUNTY KEEL LIBRARY,Tampa,FL,33618,28.086753,-82.492624,J1772,None,2,ChargePoint Network
+AutoNation Nissan - Brandon,Tampa,FL,33619,27.947161,-82.340532,J1772,None,1,Non-Networked
+Publix #1182,Tampa,FL,33609,27.941456,-82.48465,J1772,None,1,Non-Networked
